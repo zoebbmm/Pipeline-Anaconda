@@ -86,6 +86,12 @@ jobs:
       pytest
     displayName: pytest
 
+  - script: |
+      call activate myEnvironment
+      pip install pyinstaller
+      pytest
+    displayName: pyinstaller
+
 - job:
   displayName: From environment.yml
   pool:
